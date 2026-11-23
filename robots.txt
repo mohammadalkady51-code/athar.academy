@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# بعد اختيار النطاق: شغّل  SITE_URL=https://your-domain python3 gen/build.py
+# فيُضاف هنا سطر Sitemap وينشأ sitemap.xml تلقائيًا.

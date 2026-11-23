@@ -1,0 +1,32 @@
+/* ============================================================
+   أكاديمية أثر — ضبط الاتجاه RTL/LTR للحالات الخاصة
+   معظم التنسيقات تستخدم الخصائص المنطقية فتعمل في الاتجاهين تلقائيًا.
+   ============================================================ */
+
+/* أرقام الهواتف والحسابات تبقى LTR ومعزولة داخل النص العربي */
+[dir="rtl"] [dir="ltr"],
+.contact-value[dir="ltr"], .footer-phone, .trust-num { unicode-bidi: isolate; }
+[dir="rtl"] .footer-phone { direction: ltr; justify-content: flex-end; }
+[dir="rtl"] .contact-card .contact-value[dir="ltr"] { direction: ltr; }
+.footer-phone span { direction: ltr; unicode-bidi: isolate; }
+
+/* حقل الهاتف: يُكتب LTR لكن يُحاذى بما يناسب الصفحة */
+[dir="rtl"] .form-field input[type="tel"] { text-align: right; }
+[dir="rtl"] .form-field input[type="tel"]::placeholder { text-align: right; }
+
+/* اتجاه شريط تقدم المقال وتدرجات الخطوط تُضبط في style.css عبر [dir] */
+
+/* عناصر اتجاه الأسهم والكاروسيل */
+[dir="rtl"] .car-track { direction: rtl; }
+[dir="ltr"] .car-track { direction: ltr; }
+
+/* ترقيم الخطوات والأقسام يبقى لاتينيًا */
+.pcard-num, .why-num, .obj-num, .program-no, .step-num { direction: ltr; unicode-bidi: isolate; }
+
+/* النص الإنجليزي داخل صفحة عربية */
+[dir="rtl"] .ltr-inline { direction: ltr; unicode-bidi: embed; display: inline-block; }
+
+/* الإنجليزية: ضبط مسافات العناوين */
+[dir="ltr"] .hero-badge { padding: 12px 16px 12px 20px; }
+[dir="ltr"] .wa-float-label { padding: 8px 10px 8px 16px; }
+[dir="ltr"] .chip { padding: 10px 14px 10px 18px; }
