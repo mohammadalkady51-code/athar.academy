@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  قالب خريطة الموقع — يُولَّد تلقائيًا من gen/build.py (يضم الصفحات والمقالات المنشورة فقط).
+  بعد اختيار النطاق: شغّل  SITE_URL=https://example.com python3 gen/build.py
+  فيُنشأ sitemap.xml جاهزًا، أو انسخ هذا الملف واستبدل SITE_URL يدويًا.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>SITE_URL/index.html</loc><priority>1.0</priority></url>
+  <url><loc>SITE_URL/programs.html</loc><priority>0.9</priority></url>
+  <url><loc>SITE_URL/program-quran.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-tajweed.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-reading.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-stories.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-adhkar.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-ethics.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-seerah.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-fiqh.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/program-aqeedah.html</loc><priority>0.8</priority></url>
+  <url><loc>SITE_URL/packages.html</loc><priority>0.7</priority></url>
+  <url><loc>SITE_URL/athar-journey.html</loc><priority>0.7</priority></url>
+  <url><loc>SITE_URL/videos.html</loc><priority>0.7</priority></url>
+  <url><loc>SITE_URL/about.html</loc><priority>0.7</priority></url>
+  <url><loc>SITE_URL/team.html</loc><priority>0.7</priority></url>
+  <url><loc>SITE_URL/achievements.html</loc><priority>0.6</priority></url>
+  <url><loc>SITE_URL/blog.html</loc><priority>0.7</priority></url>
+  <url><loc>SITE_URL/articles/winter-quran-nights.html</loc><priority>0.6</priority></url>
+  <url><loc>SITE_URL/articles/prepare-for-ramadan.html</loc><priority>0.6</priority></url>
+  <url><loc>SITE_URL/articles/new-year-quran-home.html</loc><priority>0.6</priority></url>
+  <url><loc>SITE_URL/contact.html</loc><priority>0.9</priority></url>
+</urlset>
